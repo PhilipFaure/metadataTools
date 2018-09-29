@@ -23,12 +23,12 @@ metadataPPP <- function (inDir, outDir, name)
   if (Sys.info()[["sysname"]] == "Windows") {
     message("Patience you must have my young padawan...")
     shell(paste("exiftool -r -Keywords -AmbientTemperature -MoonPhase -SourceFile -DateTimeOriginal -csv ", inDir, " > ",
-                outDir, name, ".csv",
+                outDir, "/", name, ".csv",
                 sep = ""))
   }
   else {    message("Patience you must have my young padawan...")
     system(paste("exiftool -r -Keywords -AmbientTemperature -MoonPhase -SourceFile -DateTimeOriginal -csv ", inDir, " > ",
-                 outDir, name, ".csv",
+                 outDir, "/", name, ".csv",
                  sep = ""))
   }
   comp.time <- Sys.time() - time

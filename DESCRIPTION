@@ -1,7 +1,7 @@
 Package: metadataTools
 Type: Package
 Title: Tools to manipulate and read/write metadata
-Version: 0.1.5
+Version: 0.1.6
 Author: Philip Faure
 Maintainer: Philip Faure <philip.faure13@gmail.com>
 Description: Read metadata of camera trap images and save to a csv file
@@ -10,4 +10,4 @@ Description: Read metadata of camera trap images and save to a csv file
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
