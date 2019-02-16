@@ -32,8 +32,8 @@ metadataPPP <- function (inDir, outDir, name)
   }
   comp.time <- Sys.time() - time
   print(round(comp.time, digits = 3))
-  message("Philip needs an alkaloid compound which is a stimulant of the central nervous system.")
-message("Coffee.")
+  message("Philip needs a stimulant of the central nervous system.")
+message("i.e. Coffee..")
 message("C8•H10•N4•O2")
 message("==============================")
 message("https://github.com/PhilipFaure")
