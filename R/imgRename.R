@@ -10,14 +10,14 @@
 #' @export
 #'
 #' @examples
-#' imgRename(inDir  = "/Users/philipfaure/Photos/")
+#' imgRename(inDir  = "/Users/philipfaure/Photos")
 
 imgRename <- function (inDir)
 {
 time <- Sys.time()
   if (Sys.info()[["sysname"]] == "Windows") {
 message(".......")
-    shell(paste("exiftool -r -d %Y%m%d_%H%M%S%%-c.%%e '-filename<CreateDate'", inDir, sep = ""))
+     shell(paste("exiftool -r -d %Y%m%d_%H%M%S%%-c.%%e '-filename<CreateDate'", inDir, sep = ""))
   }
 else {
 message(".......")

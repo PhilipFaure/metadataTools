@@ -17,8 +17,8 @@ metadataPPP(inDir, outDir, name)
 Creates a csv file with selected metadata columns in. SourceFile, AmbientTemperature, MoonPhase, DateTimeOriginal, and Keywords are returned in the csv file.
 }
 \examples{
-metadataPPP(inDir  = "/Users/philipfaure/Photos/",
-            outDir = "/Users/philipfaure/Metadata/",
+metadataPPP(inDir  = "/Users/philipfaure/Photos",
+            outDir = "/Users/philipfaure/Metadata",
             name   = "my_metadata")
 }
 \author{

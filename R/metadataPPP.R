@@ -12,25 +12,30 @@
 #' @export
 #'
 #' @examples
-#' metadataPPP(inDir  = "/Users/philipfaure/Photos/",
-#'             outDir = "/Users/philipfaure/Metadata/",
+#' metadataPPP(inDir  = "/Users/philipfaure/Photos",
+#'             outDir = "/Users/philipfaure/Metadata",
 #'             name   = "my_metadata")
 
 metadataPPP <- function (inDir, outDir, name)
 {
   time <- Sys.time()
-  start <- proc.time()
   if (Sys.info()[["sysname"]] == "Windows") {
     message("Patience you must have my young padawan...")
-    shell(paste("exiftool -r -Keywords -AmbientTemperature -MoonPhase -SourceFile -DateTimeOriginal -csv ", inDir, " > ",
+    shell(paste("exiftool -r -HierarchicalSubject -Keywords -AmbientTemperature -MoonPhase -SourceFile -DateTimeOriginal -csv ", inDir, " > ",
                 outDir, "/", name, ".csv",
                 sep = ""))
   }
   else {    message("Patience you must have my young padawan...")
-    system(paste("exiftool -r -Keywords -AmbientTemperature -MoonPhase -SourceFile -DateTimeOriginal -csv ", inDir, " > ",
+    system(paste("exiftool -r -HierarchicalSubject -Keywords -AmbientTemperature -MoonPhase -SourceFile -DateTimeOriginal -csv ", inDir, " > ",
                  outDir, "/", name, ".csv",
                  sep = ""))
   }
   comp.time <- Sys.time() - time
-  paste("process.time =",comp.time,"seconds.", "Phil needs more coffee...", sep = " ")
+  print(round(comp.time, digits = 3))
+  message("Philip needs an alkaloid compound which is a stimulant of the central nervous system.")
+message("Coffee.")
+message("C8•H10•N4•O2")
+message("==============================")
+message("https://github.com/PhilipFaure")
+message("==============================")
 }

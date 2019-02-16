@@ -13,7 +13,7 @@ imgRename(inDir)
 Renames images according to YYYYmmdd_HHMMSS.jpg. It is better to just use the renaming function in the package 'camtrapR instead. It is better tested and also adds the station and camera column to the file name. This function I made is just for the fun of it.
 }
 \examples{
-imgRename(inDir  = "/Users/philipfaure/Photos/")
+imgRename(inDir  = "/Users/philipfaure/Photos")
 }
 \author{
 Philip Faure, \email{philip.faure13@gmail.com}
