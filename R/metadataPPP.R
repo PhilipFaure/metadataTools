@@ -1,6 +1,6 @@
 #' Extract Metadata
 #'
-#' Creates a csv file with selected metadata columns in. SourceFile, AmbientTemperature, MoonPhase, DateTimeOriginal, and Keywords are returned in the csv file.
+#' Creates a CSV file with selected metadata columns in. SourceFile, AmbientTemperature, MoonPhase, DateTimeOriginal, and Keywords are returned in the csv file.
 #'
 #' @param inDir character. The directory where your images are saved.
 #' @param outDir character. The directory where you want your metadata saved.
