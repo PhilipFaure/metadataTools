@@ -1,6 +1,6 @@
 Package: metadataTools
 Type: Package
-Title: Tools to manipulate and read/write metadata
+Title: Tools to manipulate, read and write metadata
 Version: 0.1.8
 Author: Philip Faure
 Maintainer: Philip Faure <philip.faure13@gmail.com>
