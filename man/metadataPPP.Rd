@@ -14,7 +14,7 @@ metadataPPP(inDir, outDir, name)
 \item{name}{character. The name you want for your new metadata file.}
 }
 \description{
-Creates a csv file with selected metadata columns in. SourceFile, AmbientTemperature, MoonPhase, DateTimeOriginal, and Keywords are returned in the csv file.
+Creates a CSV file with selected metadata columns in. SourceFile, AmbientTemperature, MoonPhase, DateTimeOriginal, and Keywords are returned in the csv file.
 }
 \examples{
 metadataPPP(inDir  = "/Users/philipfaure/Photos",

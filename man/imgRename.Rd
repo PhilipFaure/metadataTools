@@ -7,10 +7,10 @@
 imgRename(inDir)
 }
 \arguments{
-\item{inDir}{character. The directory where your images are saved. Make sure you are working on a back up of your data in case something goes wrong.}
+\item{inDir}{character. The directory where your images are saved. Make sure you are working on a back up of your data in case something goes wrong. If you are still deciding on using this function, then please work on a copy of your data and not the raw data so that if something happens you still have a backup.}
 }
 \description{
-Renames images according to YYYYmmdd_HHMMSS.jpg. It is better to just use the renaming function in the package 'camtrapR instead. It is better tested and also adds the station and camera column to the file name. This function I made is just for the fun of it.
+Renames images according to YYYYmmdd_HHMMSS.jpg. It is better to just use the renaming function in the package 'camtrapR' instead. It is better tested and also adds the station and camera column to the file name. This function I made is just for the fun of it.
 }
 \examples{
 imgRename(inDir  = "/Users/philipfaure/Photos")

@@ -25,6 +25,7 @@
 #'
 copySpecies <- function (inDir, newDir, exifTag, species)
 {
+
   start <- Sys.time()
   if (Sys.info()[["sysname"]] == "Windows") {
     message("...Looking for tagged images to copy to newDir.")
@@ -64,6 +65,7 @@ copySpecies <- function (inDir, newDir, exifTag, species)
       )
     )
   }
+
 
   print(difftime(Sys.time(), start))
 
