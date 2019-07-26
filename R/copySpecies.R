@@ -29,7 +29,7 @@ copySpecies <- function (inDir, newDir, exifTag, species)
 {
   start <- Sys.time()
   if (Sys.info()[["sysname"]] == "Windows") {
-    message(".....Looking for tagged images to copy to newDir.")
+    message("...Looking for tagged images to copy to newDir.")
     shell(
       paste(
         'exiftool -r -o .',
@@ -49,7 +49,7 @@ copySpecies <- function (inDir, newDir, exifTag, species)
     )
   }
   else {
-    message(".....Looking for tagged images to copy to newDir.")
+    message("...Looking for tagged images to copy to newDir.")
     system(
       paste(
         "exiftool -r -o . ",
