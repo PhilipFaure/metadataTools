@@ -34,7 +34,6 @@ imgRename <- function (inDir)
         sep = " "
       )
     )
-
   }
   else {
     message("...your images are now being renamed.")

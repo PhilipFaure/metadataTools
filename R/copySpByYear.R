@@ -29,17 +29,17 @@ copySpByYear <- function (inDir, newDir, exifTag, species, year)
 {
   start <- Sys.time()
   if (Sys.info()[["sysname"]] == "Windows") {
-    message("There's no I in team...")
+    message("There's no I in team.....")
     shell(paste('exiftool -r -o .', ' ', '"-Filename=',newDir,
                 '/%f%-c%E','" ','-if "$',exifTag, '=~/',
                 species,'/i',' and $DateTimeOriginal=~/^',
                 year,'/" ', inDir, sep = ""))
   }
   else {
-    message("There's no I in team...")
+    message("There's no I in team.....")
     system(paste("exiftool -r -o . ","'-Filename=",newDir,
                  "/%f%-c%E","' -if '$",exifTag,"=~/",species,
-                 "/i and $DateTimeOriginal=~/^",
+                 "/i',' and $DateTimeOriginal=~/^",
                  year,"/' ",inDir,sep=""))
   }
   stop  <- Sys.time()
