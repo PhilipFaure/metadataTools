@@ -5,7 +5,7 @@
 #'
 #' @param inDir character. The directory where all the images are saved in.
 #' @param newDir character. The directory where you would like to copy your images to.
-#' @param exifTag character. The name of the species tag column. For images tagged in Windows Live Gallery use "Subject", and for images tagged in digiKam use "HierarchicalSubject" as the input argumenets. Actually, now after I have cheanged the code to include digiKam, I think "Subject" might just work for both... *palm to face
+#' @param exifTag character. The name of the species tag column. Use "Subject" for images tagged in Windows Live Gallery or and in digiKam. Other tags might be necessary for images tagged in different software. You can use the metadata function to look for different tag names.
 #' @param species character. The species tag as tagged in Windows Live Gallery.
 #' @return Copies all images according to the specified arguments (species, year) to a new directory as chosen by the user.
 #'

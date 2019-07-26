@@ -11,7 +11,7 @@ copySpecies(inDir, newDir, exifTag, species)
 
 \item{newDir}{character. The directory where you would like to copy your images to.}
 
-\item{exifTag}{character. The name of the species tag column. For images tagged in Windows Live Gallery use "Subject", and for images tagged in digiKam use "HierarchicalSubject" as the input argumenets. Actually, now after I have cheanged the code to include digiKam, I think "Subject" might just work for both... *palm to face}
+\item{exifTag}{character. The name of the species tag column. Use "Subject" for images tagged in Windows Live Gallery or and in digiKam. Other tags might be necessary for images tagged in different software. You can use the metadata function to look for different tag names.}
 
 \item{species}{character. The species tag as tagged in Windows Live Gallery.}
 }
