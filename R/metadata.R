@@ -32,5 +32,12 @@ metadata <- function (inDir, outDir, name)
   }
   comp.time <- difftime(Sys.time(), time)
   comp.time
-  message("Phil needs more coffee...")
+  message("..............................")
+  message("..............................")
+  message("..                          ..")
+  message("..  Phil needs more coffee  ..")
+  message("..                          ..")
+  message("..............................")
+  message("..............................")
+
 }
