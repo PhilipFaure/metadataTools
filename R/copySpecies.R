@@ -27,6 +27,7 @@ copySpecies <- function (inDir, newDir, exifTag, species)
 {
 
   start <- Sys.time()
+
   if (Sys.info()[["sysname"]] == "Windows") {
     message("...Looking for tagged images to copy to newDir.")
     shell(
@@ -66,6 +67,39 @@ copySpecies <- function (inDir, newDir, exifTag, species)
     )
   }
 
+
+  # need to still work on this section so that the images are renamed correctly when there are multiple images
+  # of the same name. Also below code is wrong because it is using the newDir and not the old dir...
+  # But I need to stop procrastinating now and continue with my actual work.....
+
+# files = as.data.frame(exifr::read_exif(newDir, tags = "DateTimeOriginal", recursive = T))
+#
+# files[,2] <- paste(files[,2], ".JPG", sep = "")
+#
+# files[,2] <-
+#   gsub(
+#     files[,2],
+#     pattern = " ",
+#     replacement = "_"
+#   )
+#
+# files[,2] <-
+#   gsub(
+#     files[,2],
+#     pattern = ":",
+#     replacement = "-"
+#   )
+#
+# tmp <- gsub(files[,1], pattern=paste(newDir, "/", sep = ""), replacement = "")
+# tmp <- unlist(stringr::str_split(tmp, pattern = "/"))
+# stations <- tmp[grep(tmp, pattern="station", ignore.case = T)]
+#
+# files[,2] <- paste(stations, files[,2], sep = "__")
+#
+# # need to add a fundtion which adds a number to images with the same filename.
+#
+# file.rename(from = ,
+#             to   = )
 
   print(difftime(Sys.time(), start))
 
