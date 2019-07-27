@@ -30,9 +30,10 @@ metadataPPP <- function (inDir, outDir, name)
                  outDir, "/", name, ".csv",
                  sep = ""))
   }
-  comp.time <- Sys.time() - time
-  print(round(comp.time, digits = 3))
-  message("Philip needs a stimulant of the central nervous system.")
+  comp.time <- difftime(Sys.time(), time)
+  comp.time
+
+message("Philip needs a stimulant of the central nervous system.")
 message("i.e. Coffee..")
 message("C8•H10•N4•O2")
 message("==============================")

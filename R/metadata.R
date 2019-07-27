@@ -19,7 +19,6 @@
 metadata <- function (inDir, outDir, name)
 {
   time <- Sys.time()
-  start <- proc.time()
   if (Sys.info()[["sysname"]] == "Windows") {
     message("Patience you must have my young padawan...")
     shell(paste("exiftool -r -csv ", inDir, " > ",
@@ -31,6 +30,7 @@ metadata <- function (inDir, outDir, name)
                  outDir, "/", name, ".csv",
                  sep = ""))
   }
-  comp.time <- Sys.time() - time
-  paste("process.time =",comp.time,"seconds.", "Phil needs more coffee...", sep = " ")
+  comp.time <- difftime(Sys.time(), time)
+  comp.time
+  message("Phil needs more coffee...")
 }
