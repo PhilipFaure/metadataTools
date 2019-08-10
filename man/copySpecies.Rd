@@ -13,7 +13,7 @@ copySpecies(inDir, newDir, exifTag, species)
 
 \item{exifTag}{character. The name of the species tag column. Use "Subject" for images tagged in Windows Live Gallery or and in digiKam. Other tags might be necessary for images tagged in different software. You can use the metadata function to look for different tag names.}
 
-\item{species}{character. The species tag as tagged in Windows Live Gallery.}
+\item{species}{character. The species tag as tagged in DigiKam or Windows Live Gallery.}
 }
 \value{
 Copies all images according to the specified arguments (species, year) to a new directory as chosen by the user.
