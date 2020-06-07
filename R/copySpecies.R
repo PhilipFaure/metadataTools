@@ -38,11 +38,11 @@ copySpecies <- function (inDir, newDir, exifTag, species)
         newDir,
         '/%f%-c%E',
         '" ',
-        '-if "$',
+        '-if \"$',
         exifTag,
         '=~/',
         species,
-        '/i',
+        '/i\" ',
         inDir,
         sep = ""
       )
