@@ -1,5 +1,7 @@
 # metadataTools
-R package wrapping ExifTool (https://www.sno.phy.queensu.ca/~phil/exiftool/)
+R package wrapping ExifTool (https://www.sno.phy.queensu.ca/~phil/exiftool/). 
+
+Note: exiftool.exe application has to be downloaded and saved in "C:/Windows/." directory on your computer for this R package to work.
 
 Camera trap tools for extracting metadata, renaming images, and extracting images of classified (tagged) images.
 
